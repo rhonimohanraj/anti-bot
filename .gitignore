@@ -1,0 +1,9 @@
+# anti-bot — secrets & runtime files
+config.py
+sessions/
+*.log
+__pycache__/
+*.pyc
+/tmp/
+.DS_Store
+com.antibot.telegram.plist
