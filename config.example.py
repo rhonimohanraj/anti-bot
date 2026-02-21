@@ -16,7 +16,7 @@ ALLOWED_CHAT_ID = "YOUR_CHAT_ID_HERE"
 
 # ── Gemini API ───────────────────────────────────────────────────────────────
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "YOUR_GEMINI_API_KEY_HERE")
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-2.5-flash"
 
 # System prompt — tells Gemini how to behave
 SYSTEM_PROMPT = (
@@ -31,6 +31,16 @@ SYSTEM_PROMPT = (
 # ── Session Logging ──────────────────────────────────────────────────────────
 # Conversations are saved here so Antigravity IDE can pick them up
 SESSIONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sessions")
+
+# ── Project Settings ─────────────────────────────────────────────────────────
+# Default working directory for file operations and commands
+PROJECT_DIR = os.path.expanduser("~")
+
+# Max file size to read/display (in bytes, default 100KB)
+MAX_FILE_SIZE = 100 * 1024
+
+# Whether file edits/creates require approval before writing
+REQUIRE_APPROVAL = True
 
 # ── Shell Execution (when Mac is on) ─────────────────────────────────────────
 BLOCKED_COMMANDS = [
